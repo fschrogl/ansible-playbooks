@@ -1,0 +1,6 @@
+---
+- name: Remove unwanted packages
+  hosts: workstations
+  tasks:
+      - name: Pinging the host
+        ping:
