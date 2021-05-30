@@ -1,0 +1,12 @@
+---
+- name: Cleanup of new Manjaro installation
+  hosts: workstations
+  remote_user: root
+
+  tasks:
+      -   name: Removing unwanted software packages
+          community.general.pacman:
+              package:
+                  - nano
+                  - yakuake
+              state: removed
