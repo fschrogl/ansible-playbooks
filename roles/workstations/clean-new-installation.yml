@@ -1,12 +1,13 @@
 ---
-- name: Cleanup of new Manjaro installation
+- name: Clean a fresh workstation installation from unnecessary stuff
   hosts: workstations
-  remote_user: root
+  become: true
 
   tasks:
       -   name: Removing unwanted software packages
+          when: ansible_distribution in ["Archlinux", "Manjaro"]
           community.general.pacman:
               package:
                   - nano
                   - yakuake
-              state: removed
+              state: absent
