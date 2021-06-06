@@ -1,0 +1,15 @@
+---
+#
+# Default playbook executed by Ansible in pull-mode
+#
+
+# Run roles (host groups are defined via Ansible's inventory file)
+-   hosts: servers
+    roles:
+        - base
+        - server
+
+-   hosts: workstations
+    roles:
+        - base
+        - workstation

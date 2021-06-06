@@ -1,0 +1,13 @@
+---
+
+# host specific
+cpu: "intel"
+gpu: "intel"
+wlan: true
+bluetooth: true
+
+# applications to install
+firefox: true
+chromium: true
+steam: true
+keepassxc: true
