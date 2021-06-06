@@ -3,10 +3,10 @@
 # Default playbook executed by Ansible in pull-mode
 #
 
--   hosts: servers
-    roles:
-        - common
-        - server
+#-   hosts: servers
+#    roles:
+#        - common
+#        - server
 
 -   hosts: workstations
     roles:
