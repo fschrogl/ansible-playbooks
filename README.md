@@ -18,11 +18,11 @@ This Ansible setup is geared towards my private infrastructure. It can be execut
 ``ansible-pull`` or ``ansible`` like so:
 
 ```shell
-# Using ansible-pull
-ansible-pull --only-if-changed --url <this-repos-url>
+# Using ansible-pull on 'workstations'
+ansible-pull --purge --url <this-repos-url> --limit <ion|x230>
 
-# Using ansible-playbook on the controller (ion in example)
-ansible-playbook local.yml --limit ion --connection local
+# Using Ansible when connecting to staging VMs
+ansible-playbook local.yml --limit <ion> --extra-vars "ansible_host=192.168.x.y ansible_connection=ssh"
 ```
 ### Required Ansible Modules / Collections
 

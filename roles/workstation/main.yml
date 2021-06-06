@@ -1,0 +1,6 @@
+---
+#
+# Import role-specific playbooks
+#
+
+- import_playbook: playbooks/clean-new-installation.yml

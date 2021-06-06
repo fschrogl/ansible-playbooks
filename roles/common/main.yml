@@ -1,2 +1,7 @@
 ---
-# Not yet implemented
+- name: Debug output
+  hosts: workstations
+
+  tasks:
+      - debug:
+            msg: "debug test string"
