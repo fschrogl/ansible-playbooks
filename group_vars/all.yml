@@ -1,0 +1,16 @@
+---
+
+# Ansible variables
+ansible_python_interpreter: "/usr/bin/python"
+
+# host hardware
+cpu: "undefined"
+gpu: "undefined"
+wlan: false
+bluetooth: false
+
+# application
+firefox: false
+chromium: false
+steam: false
+keepassxc: false

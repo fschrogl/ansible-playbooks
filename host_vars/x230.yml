@@ -2,12 +2,11 @@
 
 # host specific
 cpu: "intel"
-gpu: "amd"
-wlan: false
-bluetooth: false
+gpu: "intel"
+wlan: true
+bluetooth: true
 
 # applications to install
 firefox: true
 chromium: true
-steam: true
 keepassxc: true

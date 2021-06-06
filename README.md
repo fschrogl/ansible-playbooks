@@ -19,10 +19,10 @@ This Ansible setup is geared towards my private infrastructure. It can be execut
 
 ```shell
 # Using ansible-pull
-ansible-pull --only-if-changed -U <this-repos-url>
+ansible-pull --only-if-changed --url <this-repos-url>
 
-# Using plain ansible
-ansible ...
+# Using ansible-playbook on the controller (ion in example)
+ansible-playbook local.yml --limit ion --connection local
 ```
 ### Required Ansible Modules / Collections
 

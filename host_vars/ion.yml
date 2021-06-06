@@ -2,9 +2,7 @@
 
 # host specific
 cpu: "intel"
-gpu: "intel"
-wlan: true
-bluetooth: true
+gpu: "amd"
 
 # applications to install
 firefox: true
